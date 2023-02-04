@@ -1,0 +1,16 @@
+{
+	"scripts": {
+		"build": "npx parcel build client/main.htm --dist-dir out",
+		"dev": "npm run build && node server/main.js --dev",
+		"prod": "npm run build && node server/main.js"
+	},
+	"type": "module",
+	"browserslist": "defaults",
+	"devDependencies": {
+		"@parcel/transformer-less": "^2.8.3",
+		"parcel": "^2.8.3"
+	},
+	"dependencies": {
+		"uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.19.0"
+	}
+}
